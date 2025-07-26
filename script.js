@@ -1,10 +1,9 @@
 // Message templates with placeholders
 const messageTemplates = {
-    shortMainSms: "Hey {{firstName}}, I have my drivers in the area – is the car ready to go?",
     mainSms: "Hey {{firstName}}, this is Adam with Flix Auto Transport.\nI just received your quote request about the {{carYearMakeAndModel}} and I've got drivers available in that route.\nIs the vehicle ready to go? \n\nAdam \nTransport Manager at Flix AT \n(512) 543-1267",
-    positiveReply1: "Hey {{firstName}}, I'm offering you a flat, guaranteed rate of {{totalPrice}} — tax included.\nThat covers full insurance up to $250K, door-to-door delivery, and up to 100 lbs of personal items at no extra charge.\nOnce the vehicle's moving, you'll have online tracking, 24/7 support, and no upfront payments or cancellation fees.\n my name is Adam and I represent FlixAutoTransport.com — one of the top 3 rated in the country.",
-    negativeResponse1: "I'll keep this locked in for you but, Just a heads-up — a lot of lowball quotes out there look good, but most come with bait-and-switch tactics. No hidden fees here.",
-    followUp1: "Hey {{firstName}}, just following up — If you're ready, I can get your vehicle on the schedule with a guaranteed rate and full coverage.\nNo upfront payment, no hassle.\nLet me know how you'd like to move forward.\n– Adam, Flix Auto Transport"
+    positiveReply1: "Just a heads up — some companies throw out low quotes, then add surprise fees before pickup.\nWith me, you get a flat, guaranteed rate of {{totalPrice}} — tax included.\nThat covers full insurance up to $250K, door-to-door delivery, and up to 100 lbs of personal items at no extra charge.\nOnce the vehicle's moving, you'll have online tracking, 24/7 support, and no upfront payments or cancellation fees.\nI represent FlixAutoTransport.com — one of the top 3 rated in the country.",
+    negativeResponse1: "Just a heads-up — a lot of lowball quotes out there look good, but most come with bait-and-switch tactics. No hidden fees here. I'll keep this locked in for you.",
+    followUp1: "Hey {{firstName}}, just following up — I know you were still finalizing things.\nIf you're ready, I can get your vehicle on the schedule with a guaranteed rate and full coverage.\nNo upfront payment, no hassle.\nLet me know how you'd like to move forward.\n– Adam, Flix Auto Transport"
 };
 
 // DOM elements

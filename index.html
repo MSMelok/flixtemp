@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Tools – Static Toolbox</title>
+    <title>Flix AT - </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,31 +19,32 @@
             <!-- Tool 1: Message Generator -->
             <div class="tool-card message-generator">
                 <h2>📧 Message Generator</h2>
-                <div class="form-group">
-                    <label for="customerName">Customer First Name</label>
-                    <input type="text" id="customerName" placeholder="Enter customer's first name">
-                </div>
-                
-                <div class="form-group">
-                    <label for="carDetails">Car Year, Make, and Model</label>
-                    <input type="text" id="carDetails" placeholder="e.g., 2020 Toyota Camry">
-                </div>
-                
-                <div class="form-group">
-                    <label for="totalPrice">Total Price ($)</label>
-                    <input type="number" id="totalPrice" placeholder="e.g., 1200" min="0" step="0.01">
-                </div>
-                
-                <div class="form-group">
-                    <label for="templateSelect">Message Template</label>
-                    <select id="templateSelect">
-                        <option value="">Select a template...</option>
-                        <option value="shortMainSms">Short Main SMS</option>
-                        <option value="mainSms">Main SMS</option>
-                        <option value="positiveReply1">Positive Reply 1</option>
-                        <option value="negativeResponse1">Negative Response 1</option>
-                        <option value="followUp1">Follow-Up 1</option>
-                    </select>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="customerName">Customer First Name</label>
+                        <input type="text" id="customerName" placeholder="Enter customer's first name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="totalPrice">Total Price ($)</label>
+                        <input type="number" id="totalPrice" placeholder="e.g., 1200" min="0" step="0.01">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="carDetails">Car Year, Make, and Model</label>
+                        <input type="text" id="carDetails" placeholder="e.g., 2020 Toyota Camry">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="templateSelect">Message Template</label>
+                        <select id="templateSelect">
+                            <option value="">Select a template...</option>
+                            <option value="mainSms">Main SMS</option>
+                            <option value="positiveReply1">Positive Reply 1</option>
+                            <option value="negativeResponse1">Negative Response 1</option>
+                            <option value="followUp1">Follow-Up 1</option>
+                        </select>
+                    </div>
                 </div>
                 
                 <div class="form-group">
@@ -78,15 +79,17 @@
                 <!-- Tool 3: Carrier Pay Calculator -->
                 <div class="tool-card">
                     <h2>💰 Carrier Pay Per Mile Calculator</h2>
-                    <div class="form-group">
-                        <label for="carrierPay">Carrier Pay ($)</label>
-                        <input type="number" id="carrierPay" placeholder="Enter total pay" min="0" step="0.01">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="payMiles">Miles</label>
-                        <input type="number" id="payMiles" placeholder="Enter miles" min="0" step="1">
-                        <small class="form-hint">Auto-filled from Delivery Estimator when available</small>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="carrierPay">Carrier Pay ($)</label>
+                            <input type="number" id="carrierPay" placeholder="Enter total pay" min="0" step="0.01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="payMiles">Miles</label>
+                            <input type="number" id="payMiles" placeholder="Enter miles" min="0" step="1">
+                            <small class="form-hint">Auto-filled from Delivery Estimator when available</small>
+                        </div>
                     </div>
                     
                     <div class="estimate-output">
